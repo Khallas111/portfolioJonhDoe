@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./Pages/Home";
-import About from "./Pages/About";
-import Achievements from "./Pages/Achievements";
-import Copyrights from "./Pages/Copyrights";
-import Services from "./Pages/Services";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Achievements from "./pages/Achievements";
+import Copyrights from "./pages/Copyrights";
+import Services from "./pages/Services";
 
 const App = () => {
   return (
