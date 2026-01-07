@@ -6,11 +6,13 @@ import Navbar from "react-bootstrap/Navbar";
 
 function Header() {
   return (
-    <Navbar className="header">
+    <Navbar expand="lg" className="header">
       <Container>
-        <Logo href="#home">Navbar with text</Logo>
-        <Navbar.Toggle />
-        <Navbar.Collapse className="justify-content-end">
+        <Logo />
+
+        <Navbar.Toggle aria-controls="main-navbar" />
+
+        <Navbar.Collapse id="main-navbar" className="justify-content-end">
           <Navigation />
         </Navbar.Collapse>
       </Container>
