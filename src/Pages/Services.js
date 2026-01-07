@@ -10,6 +10,8 @@ const Services = () => {
   return (
     <>
       <Header />
+
+      {/* Image Bannière */}
       <Image src={banner} fluid alt="Bannière services" className="my-4" />
       <Container className="titre-services">
         {/* Titre */}
