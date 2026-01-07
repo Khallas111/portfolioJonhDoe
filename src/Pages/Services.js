@@ -13,7 +13,7 @@ const Services = () => {
 
       {/* Image Bannière */}
       <Image src={banner} fluid alt="Bannière services" className="my-4" />
-      <Container className="titre-services">
+      <Container className="services">
         {/* Titre */}
         <Row className="text-center mb-5">
           <Col>
