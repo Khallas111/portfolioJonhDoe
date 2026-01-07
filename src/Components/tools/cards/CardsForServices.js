@@ -1,11 +1,14 @@
 import Card from "react-bootstrap/Card";
 
-function CardForServices({ title, text, img }) {
+function CardForServices({ title, text, icon: Icon }) {
   return (
-    <Card className="mb-3">
-      {img && <Card.Img variant="top" src={img} />}
+    <Card className="text-center p-3">
+      <div className="display-4 text-primary mb-3">
+        <Icon aria-hidden="true" />
+      </div>
+
       <Card.Body>
-        <Card.Title>{title}</Card.Title>
+        <Card.Title as="h3">{title}</Card.Title>
         <Card.Text>{text}</Card.Text>
       </Card.Body>
     </Card>
