@@ -1,0 +1,11 @@
+.hero-card {
+  height: 100vh;
+  min-height: 350px;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+}

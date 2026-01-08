@@ -1,70 +1,96 @@
 import React from "react";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
+import { Container, Row, Col } from "react-bootstrap";
+import Image from "react-bootstrap/Image";
+import herobg from "../assets/images/hero-bg.jpg";
+import Card from "react-bootstrap/Card";
+import "../styles/Home.scss";
+//------------------------------------------------------------------------
+//  Création du composant Hero
+const Hero = () => (
+  <section
+    className="hero-card text-white d-flex align-items-center"
+    style={{ backgroundImage: `url(${herobg})` }}
+  >
+    <div className="hero-overlay w-100 text-center">
+      <h1>Bonjour, je suis John Doe</h1>
+      <h2>Développeur web full stack</h2>
+    </div>
+  </section>
+);
+
+//------------------------------------------------------------------------
+//  Création du composant Progress
+const Progress = ({ label, value, color }) => (
+  <div className="mb-3">
+    <div className="d-flex justify-content-between">
+      <span>{label}</span>
+      <span>{value}%</span>
+    </div>
+
+    <div className="progress">
+      <div
+        className={`progress-bar bg-${color}`}
+        style={{ width: `${value}%` }}
+      />
+    </div>
+  </div>
+);
+
+const DoubleCard = () => (
+  <Container className="my-5">
+    <Row className="g-4">
+      <Col xs={12} md={6}>
+        <Card className="h-100 bg-light border-0 shadow-sm">
+          <Card.Body>
+            <Card.Title>À propos</Card.Title>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+              dolor quas, vitae voluptatum omnis fugit nobis itaque ducimus.
+              Omnis rerum inventore illo vel aliquid delectus.
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Quibusdam ullam amet, vel placeat laboriosam at, commodi fuga id
+              autem adipisci exercitationem! Deleniti corporis sit assumenda.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+              aut, magni perspiciatis earum ex nobis veritatis, enim harum
+              tempora veniam accusamus repellendus quas, nostrum nemo!
+            </p>
+          </Card.Body>
+        </Card>
+      </Col>
+
+      <Col xs={12} md={6}>
+        <Card className="h-100 bg-light border-0 shadow-sm">
+          <Card.Body>
+            <Card.Title>Mes compétences</Card.Title>
+
+            <Progress label="HTML5" value={90} color="danger" />
+            <Progress label="CSS3" value={80} color="info" />
+            <Progress label="JavaScript" value={70} color="warning" />
+            <Progress label="PHP" value={60} color="success" />
+            <Progress label="React" value={50} color="primary" />
+          </Card.Body>
+        </Card>
+      </Col>
+    </Row>
+  </Container>
+);
 
 const Home = () => {
-  const Progress = ({ label, value, color }) => (
-    <div className="mb-3">
-      <div className="d-flex justify-content-between">
-        <span>{label}</span>
-      </div>
-
-      <div className="progress">
-        <div
-          className={`progress-bar bg-${color}`}
-          role="progressbar"
-          style={{ width: `${value}%` }}
-          aria-valuenow={value}
-          aria-valuemin="0"
-          aria-valuemax="100"
-        />
-      </div>
-    </div>
-  );
-
   return (
-    <div className="accueil">
+    <>
       <Header />
-      <div className="hero">
-        <h1>Bonjour, je suis Jonh Doe</h1>
-        <h2>Développeur web full stack</h2>
-        {/* bouton modale */}
-      </div>
-      <div className="propos">
-        <h3>A propos</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut amet
-          architecto maxime assumenda nisi, expedita nulla aliquam minus eum
-          ipsam, sed voluptatibus nobis incidunt hic?
-        </p>
-        <br />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut amet
-          architecto maxime assumenda nisi, expedita nulla aliquam minus eum
-          ipsam, sed voluptatibus nobis incidunt hic?
-        </p>
-        <br />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut amet
-          architecto maxime assumenda nisi, expedita nulla aliquam minus eum
-          ipsam, sed voluptatibus nobis incidunt hic?
-        </p>
-      </div>
-      <div className="competences">
-        <h3>Mes compétences</h3>
-        <Progress label="Html5 90%" value={90} color="danger" />
-        <Progress label="CSS3 80%" value={80} color="info" />
-        <Progress label="Javascript 70%" value={70} color="warning" />
-        <Progress label="PHP 60%" value={60} color="success" />
-        <Progress
-          label="React 50%"
-          value={50}
-          color="primary
-"
-        />
-      </div>
+
+      <Hero />
+      <DoubleCard />
+
       <Footer />
-    </div>
+    </>
   );
 };
 
