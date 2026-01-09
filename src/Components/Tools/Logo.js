@@ -1,11 +1,5 @@
 import React from "react";
 
-const Logo = () => {
-  return (
-    <div className="logo">
-      <p>Jonh Doe</p>
-    </div>
-  );
-};
+const Logo = () => <div className="logo text-white fw-bold">John Doe</div>;
 
 export default Logo;

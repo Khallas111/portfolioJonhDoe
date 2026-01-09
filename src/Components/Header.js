@@ -1,24 +1,22 @@
 import React from "react";
 import Navigation from "./tools/Navigation";
 import Logo from "./tools/Logo";
-import Container from "react-bootstrap/Container";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
+import { Container, Navbar } from "react-bootstrap";
 
-function Header() {
+const Header = () => {
   return (
-    <Navbar expand="lg" className="header">
+    <Navbar expand="lg" className="header bg-dark">
       <Container>
         <Logo />
 
         <Navbar.Toggle aria-controls="main-navbar" />
 
         <Navbar.Collapse id="main-navbar" className="justify-content-end">
-          <Navigation />
+          <Navigation variant="header" />
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
-}
+};
 
 export default Header;
