@@ -1,9 +1,10 @@
 import React from "react";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, CardImg } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import herobg from "../assets/images/hero-bg.jpg";
+import johndoeabout from "../assets/images/john-doe-about.jpg";
 import Card from "react-bootstrap/Card";
 import "../styles/Home.scss";
 //------------------------------------------------------------------------
@@ -37,14 +38,20 @@ const Progress = ({ label, value, color }) => (
     </div>
   </div>
 );
-
+//------------------------------------------------------------------------
+//  Création du composant DoubleCard (composant du milieu de la page d'accueil)
 const DoubleCard = () => (
-  <Container className="my-5">
+  <Container className="border rounded-3 my-4 p-3 shadow">
     <Row className="g-4">
       <Col xs={12} md={6}>
-        <Card className="h-100 bg-light border-0 shadow-sm">
+        <Card className="border-0">
           <Card.Body>
-            <Card.Title>À propos</Card.Title>
+            <div className="section-title">À propos</div>
+            <Card.Img
+              src={johndoeabout}
+              alt="Jonh Doe travaillant sur un projet"
+              className="jonhdoe-about-img mb-4"
+            />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
               dolor quas, vitae voluptatum omnis fugit nobis itaque ducimus.
@@ -65,9 +72,9 @@ const DoubleCard = () => (
       </Col>
 
       <Col xs={12} md={6}>
-        <Card className="h-100 bg-light border-0 shadow-sm">
+        <Card className="border-0">
           <Card.Body>
-            <Card.Title>Mes compétences</Card.Title>
+            <div className="section-title">Mes compétences</div>
 
             <Progress label="HTML5" value={90} color="danger" />
             <Progress label="CSS3" value={80} color="info" />
