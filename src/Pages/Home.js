@@ -2,7 +2,6 @@ import React from "react";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import { Container, Row, Col, CardImg } from "react-bootstrap";
-import Image from "react-bootstrap/Image";
 import herobg from "../assets/images/hero-bg.jpg";
 import johndoeabout from "../assets/images/john-doe-about.jpg";
 import Card from "react-bootstrap/Card";
