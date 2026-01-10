@@ -6,7 +6,9 @@ import herobg from "../assets/images/hero-bg.jpg";
 import johndoeabout from "../assets/images/john-doe-about.jpg";
 import Card from "react-bootstrap/Card";
 import "../styles/Home.scss";
-//------------------------------------------------------------------------
+import About from "../Components/tools/BoutonModale";
+
+//----------------------------------------
 //  Création du composant Hero
 const Hero = () => (
   <section
@@ -16,6 +18,7 @@ const Hero = () => (
     <div className="hero-overlay w-100 text-center">
       <h1>Bonjour, je suis John Doe</h1>
       <h2>Développeur web full stack</h2>
+      <About />
     </div>
   </section>
 );
