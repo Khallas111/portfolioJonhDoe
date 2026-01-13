@@ -23,6 +23,7 @@ const DoubleCard = () => (
         <Card className="border-0">
           <Card.Body>
             <div className="section-title">Mes coordonnées</div>
+            <strong>John Doe</strong>
             <ContactBlock />
             <div className="map-container">
               <iframe
