@@ -1,4 +1,5 @@
 import { Row, Col, Card } from "react-bootstrap";
+import BoutonsPortfolio from "../BoutonsPortfolio";
 
 const CardsForPortfolio = ({ cards, cols = 3 }) => {
   const colSize = Math.floor(12 / cols);
@@ -11,8 +12,9 @@ const CardsForPortfolio = ({ cards, cols = 3 }) => {
             <Card.Body className="d-flex flex-column">
               <Card.Title>{card.title}</Card.Title>
               <Card.Text className="flex-grow-1">{card.text}</Card.Text>
+              <BoutonsPortfolio />
             </Card.Body>
-            <Card.Footer>
+            <Card.Footer className="px-0">
               <small className="text-muted">{card.footer}</small>
             </Card.Footer>
           </Card>
