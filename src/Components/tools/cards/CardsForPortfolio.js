@@ -1,8 +1,9 @@
 import { Row, Col, Card } from "react-bootstrap";
-import BoutonsPortfolio from "../BoutonsPortfolio";
+import VoirSite from "../BoutonsPortfolio";
 
 const CardsForPortfolio = ({ cards, cols = 3 }) => {
   const colSize = Math.floor(12 / cols);
+
   return (
     <Row className="g-4">
       {cards.map((card, index) => (
@@ -10,11 +11,11 @@ const CardsForPortfolio = ({ cards, cols = 3 }) => {
           <Card className="h-100">
             <Card.Img variant="top" src={card.image} />
             <Card.Body className="d-flex flex-column">
-              <Card.Title>{card.title}</Card.Title>
-              <Card.Text className="flex-grow-1">{card.text}</Card.Text>
-              <BoutonsPortfolio />
+              <Card.Title>{card.label}</Card.Title>
+              <Card.Text className="flex-grow-1">{card.description}</Card.Text>
+              <VoirSite slug={card.slug} published={card.published} />
             </Card.Body>
-            <Card.Footer className="px-0">
+            <Card.Footer>
               <small className="text-muted">{card.footer}</small>
             </Card.Footer>
           </Card>
