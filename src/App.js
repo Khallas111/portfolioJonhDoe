@@ -6,6 +6,7 @@ import Achievements from "./pages/Achievements";
 import Copyrights from "./pages/Copyrights";
 import Services from "./pages/Services";
 import Container from "react-bootstrap/Container";
+import "./styles/Global.scss";
 
 function Layout({ children }) {
   return (
