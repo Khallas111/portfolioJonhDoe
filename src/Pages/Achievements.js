@@ -5,7 +5,6 @@ import banner from "../assets/images/banner.jpg";
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import CardsForPortfolio from "../Components/tools/cards/CardsForPortfolio";
-import CardsData from "../Components/CardsData";
 import projects from "../data/projectsData";
 
 const Achievements = () => {
