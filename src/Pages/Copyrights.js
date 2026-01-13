@@ -21,7 +21,9 @@ const Copyrights = () => {
           <Accordion.Item eventKey="0">
             <Accordion.Header>Editeur du site</Accordion.Header>
             <Accordion.Body>
-              <strong>John Doe</strong>
+              <p>
+                <strong>John Doe</strong>
+              </p>
               <ContactBlock />
             </Accordion.Body>
           </Accordion.Item>
