@@ -10,7 +10,7 @@ import "./styles/Global.scss";
 
 function Layout({ children }) {
   return (
-    <Container fluid className="px-3">
+    <Container fluid className="px-0">
       {children}
     </Container>
   );
