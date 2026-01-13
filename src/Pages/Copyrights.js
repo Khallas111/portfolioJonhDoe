@@ -4,8 +4,20 @@ import Footer from "../Components/Footer";
 import { Container, Row, Col } from "react-bootstrap";
 import Accordion from "react-bootstrap/Accordion";
 import ContactBlock from "../Components/ContactBlock";
+import { useEffect } from "react";
 
+// non indexation de la page (HelmetProvider déclenche une erreur avec React19)
 const Copyrights = () => {
+  useEffect(() => {
+    const meta = document.createElement("meta");
+    meta.name = "robots";
+    meta.content = "noindex, nofollow";
+
+    document.head.appendChild(meta);
+    return () => {
+      document.head.removeChild(meta);
+    };
+  }, []);
   return (
     <>
       <Header />
