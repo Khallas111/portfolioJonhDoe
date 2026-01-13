@@ -6,6 +6,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import CardsForPortfolio from "../Components/tools/cards/CardsForPortfolio";
 import CardsData from "../Components/CardsData";
+import projects from "../data/projectsData";
 
 const Achievements = () => {
   return (
@@ -25,7 +26,7 @@ const Achievements = () => {
       </Container>
       {/* Réalisations */}
       <Container className="text-center mb-5">
-        <CardsForPortfolio cards={CardsData} />
+        <CardsForPortfolio cards={projects} />
       </Container>
       <Footer />
     </div>
