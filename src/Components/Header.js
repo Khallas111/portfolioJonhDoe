@@ -8,9 +8,7 @@ const Header = () => {
   return (
     <Navbar expand="lg" className="header" variant="dark">
       <Container>
-        <Navbar.Brand href="/" className="navbar-brand-custom">
-          <Logo />
-        </Navbar.Brand>
+        <Logo />
 
         <Navbar.Toggle aria-controls="main-navbar" />
 

@@ -2,7 +2,7 @@ import Card from "react-bootstrap/Card";
 
 function CardForServices({ title, text, icon: Icon }) {
   return (
-    <Card className="text-center p-3">
+    <Card className="text-center p-3 h-100">
       <div className="display-4 text-primary mb-3">
         <Icon aria-hidden="true" />
       </div>
