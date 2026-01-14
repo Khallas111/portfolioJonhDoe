@@ -1,0 +1,9 @@
+.btn-portfolio {
+  transition: all 0.2s ease;
+}
+
+.btn-portfolio:hover {
+  background-color: var(--bs-primary);
+  filter: brightness(0.9);
+  text-decoration: none;
+}
