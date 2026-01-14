@@ -10,19 +10,14 @@
   padding: 2rem;
 }
 
-.section-title {
-  position: relative;
-  padding-bottom: 1rem;
-  margin-bottom: 2.5rem;
-}
+.card {
+  background-color: #fff;
+  transition: background-color 0.25s ease, box-shadow 0.25s ease,
+    transform 0.25s ease;
 
-.section-title::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 3px;
-  background: #0d6efd;
-  border-radius: 2px;
+  &:hover {
+    background-color: #ebeaea;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    transform: translateY(-4px);
+  }
 }

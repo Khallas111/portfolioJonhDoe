@@ -13,20 +13,20 @@ const Footer = () => {
         <Row className="gy-4 justify-content-center text-center">
           {/* Infos */}
           <Col xs={12} md={4}>
-            <h5>John Doe</h5>
+            <div className="footer-title mb-2">John Doe</div>
             <ContactBlock />
             <SocialLinks />
           </Col>
 
           {/* Navigation */}
           <Col xs={12} md={4}>
-            <h5>Navigation</h5>
+            <div className="footer-title mb-2">Navigation</div>
             <Navigation variant="footer" />
           </Col>
 
           {/* Réalisations */}
           <Col xs={12} md={4}>
-            <h5>Dernières réalisations</h5>
+            <div className="footer-title mb-2">Dernières Réalisations</div>
             <ul className="footer-links">
               {projects.map(({ label, slug, published }) => (
                 <li key={slug}>

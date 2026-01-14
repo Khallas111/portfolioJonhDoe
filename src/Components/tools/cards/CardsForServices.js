@@ -8,7 +8,9 @@ function CardForServices({ title, text, icon: Icon }) {
       </div>
 
       <Card.Body>
-        <Card.Title as="h3">{title}</Card.Title>
+        <Card.Title as="div" className="card-title">
+          {title}
+        </Card.Title>
         <Card.Text>{text}</Card.Text>
       </Card.Body>
     </Card>
