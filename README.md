@@ -50,7 +50,7 @@ Installation
 ------------------------------------------------------------------------
 
 1- Cloner le projet :
-git clone https://github.com/username/nom-du-projet.git
+git clone https://github.com/Khallas111/portfolioJonhDoe
 
 2- Se rendre dans le dossier du projet :
 cd nom-du-projet
