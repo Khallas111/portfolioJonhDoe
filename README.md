@@ -6,12 +6,12 @@ Devoir de création de Portfolio interactif avec React et Bootstrap.
 Table des matières 
 ------------------------------------------------------------------------
 
-#Présentation 
-##Dépendances
-###Installation
-####Utilisation
-#####Contribuer
-######Licence
+Présentation 
+Dépendances
+Installation
+Utilisation
+Contribuer
+Licence
 
 
 Présentation
