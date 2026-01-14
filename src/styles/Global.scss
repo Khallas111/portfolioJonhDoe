@@ -1,3 +1,4 @@
+/* --- Typographie globale --- */
 body {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
@@ -5,15 +6,36 @@ body {
   padding: 0;
 }
 
+/* Tous les titres ont le même poids par défaut */
 :is(h1, h2, h3, h4, h5, h6) {
   font-weight: 600;
 }
-.section-title {font-weight: 600;}
-.card-title {font-weight: 600;}
 
 strong {
   font-weight: 600;
 }
-.btn-portfolio-wrapper:hover{
-  
+
+/* Titres de section */
+.section-title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  position: relative;
+  padding-bottom: 1rem;
+  margin-bottom: 2.5rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: #0d6efd;
+    border-radius: 2px;
+  }
+}
+
+/* Card Titles */
+.card-title {
+  font-weight: 600;
 }
