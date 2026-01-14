@@ -6,7 +6,7 @@ import herobg from "../assets/images/hero-bg.jpg";
 import johndoeabout from "../assets/images/john-doe-about.jpg";
 import Card from "react-bootstrap/Card";
 import "../styles/Home.scss";
-import About from "../Components/tools/BoutonModale";
+import About from "../Components/outils/BoutonModale";
 
 //----------------------------------------
 //  Création du composant Hero

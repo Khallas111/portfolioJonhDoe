@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
-import Navigation from "./tools/Navigation";
+import Navigation from "./outils/Navigation";
 import ContactBlock from "./ContactBlock";
 import SocialLinks from "./SocialLinks";
 import projects from "../data/projectsData";

@@ -1,6 +1,6 @@
 import React from "react";
-import Navigation from "./tools/Navigation";
-import Logo from "./tools/Logo";
+import Navigation from "./outils/Navigation";
+import Logo from "./outils/Logo";
 import { Container, Navbar } from "react-bootstrap";
 import "../styles/Header.scss";
 

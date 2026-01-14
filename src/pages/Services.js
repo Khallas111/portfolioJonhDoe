@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
-import CardForServices from "../Components/tools/cards/CardsForServices";
+import CardForServices from "../Components/outils/cards/CardsForServices";
 import { BsBrush, BsSearch, BsCodeSlash } from "react-icons/bs";
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
