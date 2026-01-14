@@ -4,7 +4,7 @@ import Footer from "../Components/Footer";
 import banner from "../assets/images/banner.jpg";
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
-import CardsForPortfolio from "../Components/tools/cards/CardsForPortfolio";
+import CardsForPortfolio from "../Components/outils/cards/CardsForPortfolio";
 import projects from "../data/projectsData";
 import "../styles/Achievements.scss";
 
