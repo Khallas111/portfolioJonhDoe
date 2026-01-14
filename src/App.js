@@ -5,20 +5,12 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Achievements from "./pages/Achievements";
 import Copyrights from "./pages/Copyrights";
-import Container from "react-bootstrap/Container";
-
-function Layout({ children }) {
-  return (
-    <Container fluid className="px-0">
-      {children}
-    </Container>
-  );
-}
+import Layout from "./Layout";
 
 const App = () => {
   return (
-    <Layout>
-      <BrowserRouter>
+    <BrowserRouter>
+      <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -27,8 +19,8 @@ const App = () => {
           <Route path="/services" element={<Services />} />
           <Route path="*" element={<Home />} />
         </Routes>
-      </BrowserRouter>
-    </Layout>
+      </Layout>
+    </BrowserRouter>
   );
 };
 
