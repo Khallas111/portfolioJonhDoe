@@ -15,14 +15,14 @@ const CardsForPortfolio = ({ cards, cols = 3 }) => {
               alt={card.label ? card.label : "Image du projet"}
             />
 
-            <Card.Body className="d-flex flex-column">
+            <Card.Body className="d-flex flex-column ">
               <Card.Title>{card.label}</Card.Title>
-              <Card.Text className="flex-grow-1">{card.description}</Card.Text>
+              <Card.Text className="flex-grow-1 ">{card.description}</Card.Text>
 
               <VoirSite slug={card.slug} published={card.published} />
             </Card.Body>
 
-            <Card.Footer>
+            <Card.Footer className="px-0">
               <small className="text-muted">{card.footer}</small>
             </Card.Footer>
           </Card>
