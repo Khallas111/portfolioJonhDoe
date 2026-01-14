@@ -43,10 +43,10 @@ const Progress = ({ label, value, color }) => (
 //------------------------------------------------------------------------
 //  Création du composant DoubleCard (composant du milieu de la page d'accueil)
 const DoubleCard = () => (
-  <Container className="border rounded-3 my-4 p-3 shadow">
+  <Container className="border rounded-3 my-4 p-3 shadow double-card-hover">
     <Row className="g-4">
-      <Col xs={12} md={6}>
-        <Card className="border-0">
+      <Col xs={12} md={6} className="d-flex">
+        <Card className="border-0 flex-fill">
           <Card.Body>
             <div className="section-title">À propos</div>
             <Card.Img
@@ -73,8 +73,8 @@ const DoubleCard = () => (
         </Card>
       </Col>
 
-      <Col xs={12} md={6}>
-        <Card className="border-0">
+      <Col xs={12} md={6} className="d-flex">
+        <Card className="border-0 flex-fill">
           <Card.Body>
             <div className="section-title">Mes compétences</div>
 

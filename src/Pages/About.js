@@ -10,8 +10,8 @@ import "../styles/About.scss";
 const DoubleCard = () => (
   <Container className="border rounded-3 my-4 p-3 shadow">
     <Row className="g-4">
-      <Col xs={12} md={6}>
-        <Card className="border-0">
+      <Col xs={12} md={6} className="d-flex">
+        <Card className="border-0 flex-fill">
           <Card.Body>
             <div className="section-title">Formulaire de contact</div>
             <FormContact />
@@ -19,8 +19,8 @@ const DoubleCard = () => (
         </Card>
       </Col>
 
-      <Col xs={12} md={6}>
-        <Card className="border-0">
+      <Col xs={12} md={6} className="d-flex">
+        <Card className="border-0 flex-fill">
           <Card.Body>
             <div className="section-title">Mes coordonnées</div>
             <strong>John Doe</strong>
