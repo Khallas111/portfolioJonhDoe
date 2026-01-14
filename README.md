@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+Portfolio de Jonh Doe.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Devoir de création de Portfolio interactif avec React et Bootstrap.
 
-## Available Scripts
 
-In the project directory, you can run:
+Table des matières 
+------------------------------------------------------------------------
 
-### `npm start`
+#Présentation 
+##Dépendances
+###Installation
+####Utilisation
+#####Contribuer
+######Licence
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Présentation
+------------------------------------------------------------------------
 
-### `npm test`
+Ce projet est un site web développé avec React et React-Bootstrap, conçu pour présenter un portfolio personnel, avec :
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Une page de contact avec formulaire validé par HTML5 et Bootstrap.
 
-### `npm run build`
+Une section pour les coordonnées et carte Google Maps.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Design responsive grâce à Bootstrap.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Objectif : créer un projet facilement clonable et personnalisable pour un portfolio personnel ou un projet similaire.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+Dépendances
+------------------------------------------------------------------------
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Le projet utilise les packages suivants :
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+React (v18+)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+React DOM (v18+)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+React-Bootstrap (v2+ compatible avec Bootstrap 5)
 
-## Learn More
+Bootstrap (^5.3.8)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Sass / SCSS pour les styles (node-sass ou sass)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+React Router (si navigation multi-pages est nécessaire)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Installation
+------------------------------------------------------------------------
 
-### Analyzing the Bundle Size
+1- Cloner le projet :
+git clone https://github.com/username/nom-du-projet.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2- Se rendre dans le dossier du projet :
+cd nom-du-projet
 
-### Making a Progressive Web App
+3- Installer les dépendances : 
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+4- Lancer le projet en local :
+npm start
+Le projet sera accessible sur http://localhost:3000 (par défault).
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Utilisation
+------------------------------------------------------------------------
 
-### Deployment
+Les pages sont basées sur React et Bootstrap pour un rendu responsive.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Les composants sont modulaires et peuvent être réutilisés.
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contribuer
+------------------------------------------------------------------------
+
+Forker le projet.
+
+Créer une branche (git checkout -b feature/ma-fonctionnalité).
+
+Committer vos changements (git commit -am 'Ajout de ma fonctionnalité').
+
+Pusher la branche (git push origin feature/ma-fonctionnalité).
+
+Ouvrir une Pull Request.
+
+
+Licence
+------------------------------------------------------------------------
+
+Le projet est libre de droit.
